@@ -1,39 +1,41 @@
-# public-Transport-and-Energy-Usage-Analytics-in-Germany-2025-
-This project analyzes free German government datasets to explore public transport use and energy consumption trends. Using Python for data cleaning and analysis and Power BI for interactive visuals, it identifies city-specific patterns, peak usage times, and correlations to support data-driven policymaking and urban planning.
-)
-🧠 Project Summary
+# Public Transport & Energy Usage Analytics in Germany (2025)
 
-Using free German government datasets, this project explores trends in public transport usage and energy consumption across major cities in Germany.
-The goal is to uncover patterns, peak usage times, and correlations between transport activity and energy demand — helping policymakers, transportation authorities, and urban planners make data-driven decisions.
+Wanted to check if there's a real link between how much people use public transport in German cities and how much energy those cities burn through. Pulled some open government data and dug in with Python.
 
-The analysis was conducted using Python for data cleaning and exploration, and Power BI for creating interactive dashboards and insights.
+## The idea
 
-📊 Key Insights
+Looked at ten cities — Berlin, Munich, Hamburg, Frankfurt, Stuttgart, Cologne, Düsseldorf, Leipzig, Dresden, Bremen. Cleaned up the ridership and energy numbers in Pandas, then plotted them together to see if the two actually move with each other or if it was just a hunch.
 
-🚌 Berlin, Munich, and Hamburg show the highest daily public transport usage.
+Turns out they do, pretty closely.
 
-⚡ Peak energy consumption aligns with morning and evening commute hours, highlighting the transport–energy relationship.
+## What I noticed
 
-🏙️ Mid-sized cities display consistent energy usage, suggesting opportunities for energy optimization.
+Berlin's numbers are honestly kind of wild compared to the rest — over 4 million riders a day, way ahead of Munich and Hamburg which come next. After Frankfurt there's a big drop into the mid-sized cities and things flatten out from there.
 
-📉 Weekend and holiday transport usage declines, while energy consumption remains relatively stable.
+The energy line follows almost the same shape as ridership, city by city. Makes sense when you think about it — more trains running, more stations, more power needed — but it was still nice actually seeing it hold up across all ten instead of just the big three.
 
-🔄 Findings can support smarter scheduling, energy load management, and urban planning.
+Couple other things:
+- Energy use spikes around the usual morning/evening rush windows
+- Mid-sized cities like Stuttgart and Cologne have flatter, more predictable energy use than the big ones — probably easier to plan around
+- Ridership drops a lot on weekends but energy consumption barely moves, so a good chunk of that energy isn't really tied to how many people show up. Just infrastructure sitting there running.
 
-🛠️ Tools & Techniques Used
+## Tools
 
-Python: Data transformation, cleansing, and visualization (Pandas, Matplotlib, Seaborn)
+Python — Pandas for cleaning, Matplotlib/Seaborn for the charts. Data's from Germany's open transport and energy portals.
 
-Power BI: Interactive dashboards and KPI tracking
+## Folder layout
 
-Germany Open Data: Official datasets on public transport and energy consumption
 
-Techniques: Trend analysis, correlation analysis, and city-wise comparisons├── data/                  # Raw and cleaned datasets
-├── notebooks/             # Jupyter notebooks for data analysis
-├── visuals/               # Charts and Power BI screenshots
-├── README.md              # Project documentation
-└── scripts/               # Python scripts for cleaning and analysis
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
-pip install -r requirements.txt
+├── data/
+├── notebooks/
+├── scripts/
+├── visuals/
+└── README.md
+
+
+## Running it
+
+Clone it, install the requirements, go through the notebooks in order — cleaning first, then the analysis and charts.
+
+Data's from 2025 releases, so numbers might look a bit different if you check against something more recent.
 <img width="2048" height="1024" alt="image" src="https://github.com/user-attachments/assets/fe3b156a-5741-493d-a1c7-17abd0e780ba" />
