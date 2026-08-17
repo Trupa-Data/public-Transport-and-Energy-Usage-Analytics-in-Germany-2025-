@@ -2,7 +2,6 @@ Public Transport & Energy Usage Analytics in Germany (2025)
 
 Wanted to check if there's real link between how much people use public transport in German cities and how much energy those cities burn through. pulled some open government data and dug in with python.
 
-
 The Idea
 
 Looked at ten cities — Berlin, Munich, Hamburg, Frankfurt, Stuttgart, Cologne, Düsseldorf, Leipzig, Dresden, Bremen. Cleaned up the ridership and energy numbers in Pandas, then plotted them together to see if the two actually move with each other or if it was just a hunch.
