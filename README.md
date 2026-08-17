@@ -21,7 +21,7 @@ Couple other things:
 
 Tools
 
-Python Pandas for cleaning, Matplotlib/Seaborn for the charts. Data's from Germany's open transport and energy portals.
++ Python Pandas for cleaning, Matplotlib/Seaborn for the charts. Data's from Germany's open transport and energy portals.
 
 Folder Layouts
 
